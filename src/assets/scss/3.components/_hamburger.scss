@@ -1,0 +1,24 @@
+.hamburger {
+	padding: 0.5rem;
+	position: relative;
+	cursor: pointer;
+
+	.hamburger-line {
+		display: block;
+		content: '';
+		background-color: $brand-red;
+		position: relative;
+
+		&:before {
+			@extend .hamburger-line;
+		}
+		// &:before
+
+		&:after {
+			@extend .hamburger-line;
+		}
+		// &:after
+	}
+	// .hamburger-line
+}
+// .hamburger

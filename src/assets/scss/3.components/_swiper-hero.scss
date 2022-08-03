@@ -1,0 +1,126 @@
+.swiper-hero {
+	height: 477px;
+
+	@include media-breakpoint-up(xl) {
+		height: 608px;
+	}
+
+	.swiper-slide {
+
+	}
+	// .swiper-slide
+
+	.swiper-slide-img {
+		width: 100%;
+		height: 100%;
+		background-position: center left;
+		position: absolute;
+		z-index: 1;
+
+		@include media-breakpoint-up(md) {
+			background-position: center center;
+		}
+	}
+	// .swiper-slide-img
+
+	.swiper-slide-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		width: 100%;
+		height: 100%;
+		color: $white;
+		padding: 50px 22px 100px;
+		box-sizing: border-box;
+		position: absolute;
+		z-index: 2;
+
+		@include media-breakpoint-up(md) {
+			padding-left: 12%;
+			padding-bottom: 85px;
+		}
+		@include media-breakpoint-up(lg) {
+			padding-left: 18%;
+		}
+		@include media-breakpoint-up(xxl) {
+			padding-left: 22%;
+		}
+	}
+	// .swiper-slide-text
+
+	.swiper-slide-title {
+		font: {
+			family: $font-secondary;
+			size: 2.125rem;
+			weight: 700;
+		}
+		text-transform: uppercase;
+		margin-bottom: 25px;
+
+		@include media-breakpoint-up(md) {
+			font-size: 2.75rem;
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: 3.375rem;
+		}
+	}
+	// .swiper-slide-title
+
+	.swiper-slide-tags {
+
+		a {
+			display: inline-block;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			text-decoration: underline;
+			color: $white;
+			margin-right: 29px;
+
+			@include media-breakpoint-up(md) {
+				font-size: 0.875rem;
+				margin-right: 1.0625rem;
+			}
+		}
+		// a
+	}
+	// .swiper-slide-tags
+
+	.swiper-pagination {
+		text-align: left;
+		bottom: 50px;
+		left: 22px;
+
+		@include media-breakpoint-up(md) {
+			bottom: 38px;
+			left: 12%;
+		}
+		@include media-breakpoint-up(lg) {
+			left: 18%;
+		}
+		@include media-breakpoint-up(xxl) {
+			left: 22%;
+		}
+
+		.swiper-pagination-bullet {
+			width: 6px;
+			height: 6px;
+			background-color: rgba($white, 0.4);
+			border-radius: 0;
+			margin: 0 6px;
+			opacity: 1;
+
+			&:first-child {
+				margin-left: 0;
+			}
+			// &:first-child
+
+			&.swiper-pagination-bullet-active {
+				background-color: $white;
+			}
+			// &.swiper-pagination-bullet-active
+		}
+		// .swiper-pagination-bullet
+	}
+	// .swiper-pagination
+}
+// .swiper-hero

@@ -1,0 +1,24 @@
+.visually-hidden {
+	width: 1px !important;
+	height: 1px !important;
+	clip: rect(1px,1px,1px,1px);
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute !important;
+}
+// .visually-hidden
+
+.mobile-only {
+
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+}
+// .mobile-only
+
+.bg-img {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+// .bg-img

@@ -1,0 +1,259 @@
+.main-navigation-desktop {
+	display: none;
+	overflow: visible;
+
+	@include media-breakpoint-up(lg) {
+		display: flex;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 1920px;
+		height: 107px;
+		padding: 0 36px;
+		margin: 0 auto;
+		position: relative;
+
+		@include media-breakpoint-up(xxl) {
+			padding: 0 82px;
+		}
+	}
+	// .container
+
+	.logo {
+		flex-shrink: 0;
+	}
+	// .logo
+
+	.logo-image {
+		width: 145px;
+		height: auto;
+
+		@include media-breakpoint-up(xl) {
+			width: 177px;
+		}
+	}
+	// .logo-image
+
+	.menu {
+		flex: 1 1 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-right: 10px;
+
+		@include media-breakpoint-up(xl) {
+			margin-right: 20px;
+		}
+	}
+	// .menu
+
+	.menu-item {
+		margin-right: 20px;
+
+		@include media-breakpoint-up(xl) {
+			margin-right: 25px;
+		}
+		@include media-breakpoint-up(xxl) {
+			margin-right: 34px;
+		}
+	}
+	// .menu-item
+
+	.menu-link {
+		font: {
+			family: $font-secondary;
+			size: 1.25rem;
+			weight: 500;
+		}
+		text-transform: uppercase;
+		padding: 0.5rem;
+		position: relative;
+
+		@include media-breakpoint-up(xl) {
+			font-size: 1.5rem;
+		}
+
+		&:before {
+			display: block;
+			content: '';
+			width: 0;
+			height: 2px;
+			background-color: $black;
+			position: absolute;
+			bottom: 5px;
+			left: 50%;
+			@include transition;
+		}
+		// &:before
+
+		&:hover {
+
+			&:before {
+				width: calc(100% - 1rem);
+				left: 0.5rem;
+			}
+			// &:before
+		}
+		// &:hover
+	}
+	// .menu-link
+
+	.search-form-trigger {
+		flex-shrink: 0;
+		display: inline-block;
+		font-size: 0;
+		margin-right: 10px;
+
+		@include media-breakpoint-up(xl) {
+			margin-right: 40px;
+		}
+		@include media-breakpoint-up(xxl) {
+			margin-right: 52px;
+		}
+	}
+	// .search-form-trigger
+
+	.icon-search {
+		width: 32px;
+		height: 32px;
+		background-size: 28px 28px;
+	}
+	// .icon-search
+
+	.search-form {
+		padding: 22px 24px 20px;
+		background-color: $bg-gray;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		z-index: -1;
+		@include transition(0.1s);
+		transform: translateY(-100%);
+
+		&.active {
+			transform: translateY(0);
+		}
+		// &.active
+
+		&.shown {
+			z-index: 1;
+		}
+		// &.shown
+
+		input[type="text"] {
+			min-width: 403px;
+			font-size: 1.5rem;
+		}
+		// input[type="text"]
+
+		input[type="submit"] {
+			width: 20px;
+			height: 20px;
+			background-size: 17px 17px;
+			margin-right: 1rem;
+		}
+		// input[type="submit"]
+	}
+	// .search-form
+
+	.hamburger {
+		flex-shrink: 0;
+		height: calc(22px + 1rem);
+		right: -0.5rem;
+
+		@include media-breakpoint-up(xxl) {
+			height: calc(35px + 1rem);
+		}
+
+		.hamburger-line {
+			width: 35px;
+			height: 4px;
+
+			@include media-breakpoint-up(xxl) {
+				width: 56px;
+				height: 7px;
+			}
+
+			&:before {
+				@extend .hamburger-line;
+				top: -9px;
+
+				@include media-breakpoint-up(xxl) {
+					top: -14px;
+				}
+			}
+			// &:before
+
+			&:after {
+				@extend .hamburger-line;
+				bottom: -5px;
+
+				@include media-breakpoint-up(xxl) {
+					bottom: -7px;
+				}
+			}
+			// &:after
+		}
+		// .hamburger-line
+	}
+	// .hamburger
+
+	.desktop-menu-collapsible-panel {
+		min-width: 302px;
+		padding: 51px 36px 58px 78px;
+		background-color: $bg-gray;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		z-index: -1;
+		transition: 0.1s all ease-in-out;
+		transform: translateY(-100%);
+
+		@include media-breakpoint-up(xl) {
+			padding-right: 82px;
+		}
+
+		&.active {
+			transform: translateY(0);
+		}
+		// &.active
+
+		&.shown {
+			z-index: 1;
+		}
+		// &.shown
+
+		.menu {
+			flex-direction: column;
+			align-items: flex-end;
+			margin-right: 0;
+			position: relative;
+			right: -8px;
+
+			.menu-item {
+				margin: 0 0 35px;
+
+				&:last-child {
+					margin-bottom: 31px;
+				}
+				// &:last-child
+			}
+			// .menu-item
+		}
+		// .menu
+
+		.social-links {
+			justify-content: flex-end;
+			padding-top: 28px;
+			position: relative;
+			right: -8px;
+		}
+		// .social-links
+	}
+	// .desktop-menu-collapsible-panel
+}
+// .main-navigation-desktop

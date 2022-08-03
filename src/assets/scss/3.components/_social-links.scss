@@ -1,0 +1,17 @@
+.social-links {
+	display: flex;
+	align-items: center;
+
+	a {
+		display: inline-block;
+		padding: 0.25rem 0.5rem;
+	}
+	// a
+
+	.icon {
+		width: 31px;
+		height: 31px;
+	}
+	// .icon
+}
+// .social-links

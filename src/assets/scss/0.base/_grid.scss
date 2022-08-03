@@ -1,0 +1,30 @@
+.grid {
+	display: flex;
+	flex-direction: column;
+
+	@include media-breakpoint-up(md) {
+		flex-direction: row;
+		margin: 0 -15px;
+	}
+}
+// .grid
+
+.col {
+
+	@include media-breakpoint-up(md) {
+		flex: 0 0 calc(33.33333% - 30px);
+		width: calc(33.33333% - 30px);
+		margin: 0 15px;
+	}
+}
+// .col
+
+.col-2x {
+
+	@include media-breakpoint-up(md) {
+		flex: 0 0 calc(66.66667% - 30px);
+		width: calc(66.66667% - 30px);
+		margin: 0 15px;
+	}
+}
+// .col-2x

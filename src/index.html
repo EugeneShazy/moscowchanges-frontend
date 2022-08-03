@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MoscowChanges 2.0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="pageWrapper" class="page-wrapper">
+
+            <header class="main-header">
+
+                <!-- Mobile Header -->
+                <nav class="main-navigation-mobile" aria-label="Main">
+
+                    <div class="container">
+
+                        <!-- Mobile Logo -->
+                        <a class="logo" href="/">
+                            <img class="logo-image" src="assets/img/Moscow-Changes_logo.png" alt="Москва меняется">
+                        </a>
+
+                        <!-- Mobile Hamburger -->
+                        <button id="collapsibleMenuMobileTrigger" class="hamburger" type="button" aria-expanded="false" aria-controls="collapsible-menu-mobile">
+                            <span class="visually-hidden">Toggle Menu</span>
+                            <span class="hamburger-line"></span>
+                        </button>
+
+                    </div><!-- .container -->
+
+                    <!-- Mobile Collapsible Panel -->
+                    <div id="mobileMenuPanel" class="mobile-menu-collapsible-panel">
+
+                        <!-- Mobile Primary Navigation Menu -->
+                        <ul class="menu" id="navigationPrimaryMobile">
+                            <li class="menu-item menu-item--current">
+                                <a class="menu-link" href="javascript:void(0);">Новости</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Моя Москва</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Репортаж</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Фотогалерея</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Блоги</a>
+                            </li>
+                        </ul><!-- #navigationPrimaryMobile -->
+
+                        <!-- Mobile Secondary Navigation Menu -->
+                        <ul class="menu" id="navigationSecondaryMobile">
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Архив газеты pdf</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">О проекте</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Контакты</a>
+                            </li>
+                        </ul><!-- #navigationSecondaryMobile -->
+
+                        <hr>
+
+                        <!-- Mobile Search Form -->
+                        <form role="search" method="get" id="searchFormMobile" class="search-form" action="" >
+                            <input type="text" value="" name="s" id="s" placeholder="Поиск" />
+                            <input type="submit" id="searchFormMobileSubmit" />
+                        </form>
+
+                        <!-- Mobile Social Links -->
+                        <ul class="social-links">
+                            <li>
+                                <a href="javascript:void;">
+                                    <span class="icon icon-telegram">
+                                        <span class="visually-hidden">Наш Телеграм-канал</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void;">
+                                    <span class="icon icon-youtube">
+                                        <span class="visually-hidden">Наш YouTube-канал</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void;">
+                                    <span class="icon icon-vk">
+                                        <span class="visually-hidden">Мы ВКонтакте</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul><!-- .social-links -->
+
+                    </div><!-- .mobile-menu-collapsible-panel -->
+
+                </nav><!-- .main-navigation-mobile -->
+
+                <!-- Desktop Header -->
+                <nav class="main-navigation-desktop" aria-label="Main">
+
+                    <div class="container">
+
+                        <!-- Desktop Logo -->
+                        <a class="logo" href="/">
+                            <img class="logo-image" src="assets/img/Moscow-Changes_logo.png" alt="Москва меняется">
+                        </a>
+
+                        <!-- Desktop Primary Navigation Menu -->
+                        <ul class="menu" id="navigationPrimaryDesktop">
+                            <li class="menu-item menu-item--current">
+                                <a class="menu-link" href="javascript:void(0);">Новости</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Моя Москва</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Репортаж</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Интервью</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Фотогалерея</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="javascript:void(0);">Блоги</a>
+                            </li>
+                        </ul><!-- #navigationPrimaryDesktop -->
+
+                        <div id="collapsibleSearchFormDesktopArea">
+                            <a href="" id="searchFormDesktopTrigger" class="search-form-trigger" aria-expanded="false">
+                                <span class="icon icon-search"></span>
+                            </a>
+
+                            <!-- Desktop Search Form -->
+                            <form role="search" method="get" id="searchFormDesktop" class="search-form" action="" >
+                                <input type="text" value="" name="s" id="s" placeholder="Поиск" />
+                                <input type="submit" id="searchFormDesktopSubmit" />
+                            </form>
+                        </div><!-- #collapsibleSearchFormDesktopArea -->
+
+                        <div id="collapsibleMenuDesktopArea">
+                            <!-- Desktop Hamburger -->
+                            <button id="collapsibleMenuDesktopTrigger" class="hamburger" type="button" aria-expanded="false" aria-controls="collapsible-menu-desktop">
+                                <span class="visually-hidden">Toggle Menu</span>
+                                <span class="hamburger-line"></span>
+                            </button>
+
+                            <!-- Desktop Collapsible Panel -->
+                            <div id="desktopMenuPanel" class="desktop-menu-collapsible-panel">
+
+                                <!-- Desktop Secondary Navigation Menu -->
+                                <ul class="menu" id="navigationSecondaryDesktop">
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="javascript:void(0);">Архив газеты pdf</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="javascript:void(0);">О проекте</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="javascript:void(0);">Контакты</a>
+                                    </li>
+                                </ul><!-- #navigationSecondaryDesktop -->
+
+                                <hr>
+
+                                <!-- Desktop Social Links -->
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="javascript:void;">
+                                    <span class="icon icon-telegram">
+                                        <span class="visually-hidden">Наш Телеграм-канал</span>
+                                    </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void;">
+                                    <span class="icon icon-youtube">
+                                        <span class="visually-hidden">Наш YouTube-канал</span>
+                                    </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void;">
+                                    <span class="icon icon-vk">
+                                        <span class="visually-hidden">Мы ВКонтакте</span>
+                                    </span>
+                                        </a>
+                                    </li>
+                                </ul><!-- .social-links -->
+
+                            </div><!-- .desktop-menu-collapsible-panel -->
+                        </div><!-- #collapsibleMenuDesktopArea -->
+
+                    </div><!-- .container -->
+
+                </nav>
+                <!-- .main-navigation-desktop -->
+
+            </header><!-- .main-header -->
+
+            <main class="main-content" aria-label="Content">
+
+                <section class="section-hero-carousel">
+                    <div class="swiper swiper-hero">
+                        <div class="swiper-wrapper">
+                            <div id="heroSlide1" class="swiper-slide">
+                                <div class="swiper-slide-img bg-img" style="background-image: url('assets/img/Hero-Slide-01.jpg');"></div>
+                                <div class="swiper-slide-text">
+                                    <h1 class="swiper-slide-title">Люди и животные:<br> что не так<br class="mobile-only"> с антикафе?</h1>
+                                    <div class="swiper-slide-tags">
+                                        <a href="javascript:void(0);">Моя Москва</a>
+                                        <a href="javascript:void(0);">Животные</a>
+                                    </div><!-- .swiper-slide-tags -->
+                                </div><!-- .swiper-slide-text -->
+                            </div><!-- #heroSlide1 -->
+                            <div id="heroSlide2" class="swiper-slide">
+                                <div class="swiper-slide-img bg-img" style="background-image: url('assets/img/Hero-Slide-01.jpg');"></div>
+                                <div class="swiper-slide-text">
+                                    <h1 class="swiper-slide-title">Люди и животные:<br> что не так<br class="mobile-only"> с антикафе 2?</h1>
+                                    <div class="swiper-slide-tags">
+                                        <a href="javascript:void(0);">Моя Москва</a>
+                                        <a href="javascript:void(0);">Животные</a>
+                                    </div><!-- .swiper-slide-tags -->
+                                </div><!-- .swiper-slide-text -->
+                            </div><!-- #heroSlide2 -->
+                            <div id="heroSlide3" class="swiper-slide">
+                                <div class="swiper-slide-img bg-img" style="background-image: url('assets/img/Hero-Slide-01.jpg');"></div>
+                                <div class="swiper-slide-text">
+                                    <h1 class="swiper-slide-title">Люди и животные:<br> что не так<br class="mobile-only"> с антикафе 3?</h1>
+                                    <div class="swiper-slide-tags">
+                                        <a href="javascript:void(0);">Моя Москва</a>
+                                        <a href="javascript:void(0);">Животные</a>
+                                    </div><!-- .swiper-slide-tags -->
+                                </div><!-- .swiper-slide-text -->
+                            </div><!-- #heroSlide3 -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section><!-- .section-hero-carousel -->
+
+                <section class="section-banner">
+                    <div class="container">
+                        <img src="assets/img/Banner-01.jpg" width="1170" height="231" alt="Мои новости - мой район - моя Москва">
+                    </div><!-- .container -->
+                </section><!-- .section-banner -->
+
+                <section class="section-news">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col" style="height: 500px; color: white; background-color: #098DD7;">
+                                Column 1
+                            </div><!-- .col -->
+                            <div class="col-2x" style="height: 500px; color: white; background-color: bisque;">
+                                Column 2
+                            </div><!-- .col-2x -->
+                        </div><!-- .grid -->
+                    </div><!-- .container -->
+                </section><!-- .section-news -->
+
+            </main><!-- .main-content -->
+
+            <footer class="main-footer">
+
+            </footer><!-- .main-footer -->
+
+        </div><!-- .page-wrapper -->
+
+  </body>
+</html>

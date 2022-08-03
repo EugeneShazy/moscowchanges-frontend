@@ -13,6 +13,11 @@
 tags
 nbproject/*
 
+# Archives
+*.zip
+*.7z
+*.rar
+
 # Windows
 Thumbs.db
 

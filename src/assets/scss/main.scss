@@ -1,9 +1,9 @@
 /* Base */
 @import '0.base/reset';
+@import '0.base/mixins';
 @import '0.base/colors';
 @import '0.base/typography';
 @import '0.base/print';
-@import '0.base/mixins';
 @import '0.base/grid';
 @import '0.base/utility';
 
@@ -13,15 +13,13 @@
 @import '1.layout/navigation-mobile';
 @import '1.layout/navigation-desktop';
 
-/* Vendor */
-@import '2.vendor/slick';
-
 /* Components */
-@import '3.components/hamburger';
-@import '3.components/icons';
-@import '3.components/search-form';
-@import '3.components/social-links';
-@import '3.components/swiper-hero';
+@import '2.components/hamburger';
+@import '2.components/icons';
+@import '2.components/search-form';
+@import '2.components/social-links';
+@import '2.components/swiper-hero';
+@import '2.components/posts-list';
 
 /* Sections */
 

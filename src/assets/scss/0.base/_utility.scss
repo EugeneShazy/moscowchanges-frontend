@@ -16,9 +16,19 @@
 }
 // .mobile-only
 
+.brand-gradient {
+	background: linear-gradient(270deg, $brand-red 0%, #098DD7 100%);
+}
+// .brand-gradient
+
 .bg-img {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
 // .bg-img
+
+.bg-white {
+	background-color: $white;
+}
+// .bg-white

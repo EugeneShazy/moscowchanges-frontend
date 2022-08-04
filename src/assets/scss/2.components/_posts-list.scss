@@ -1,4 +1,6 @@
 .posts-list {
+	display: flex;
+	flex-wrap: wrap;
 
 	&.bg-white {
 		height: 100%;
@@ -39,6 +41,7 @@
 	// .section-title
 
 	.post-item {
+		flex: 0 0 100%;
 		margin-bottom: 1.1875rem;
 
 		&:last-of-type {
@@ -74,6 +77,7 @@
 	// post-item
 
 	.section-link {
+		align-self: flex-end;
 		font-weight: 500;
 		text-transform: uppercase;
 		color: rgba($black, 0.4);

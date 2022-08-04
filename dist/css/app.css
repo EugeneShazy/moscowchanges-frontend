@@ -1448,6 +1448,13 @@ a:hover .icon-vk {
   background-color: #fff;
 }
 
+.posts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .posts-list.bg-white {
   height: 100%;
   padding: 19px 22px 22px;
@@ -1480,6 +1487,9 @@ a:hover .icon-vk {
   }
 }
 .posts-list .post-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   margin-bottom: 1.1875rem;
 }
 .posts-list .post-item:last-of-type {
@@ -1502,6 +1512,8 @@ a:hover .icon-vk {
   color: rgba(0, 0, 0, 0.4);
 }
 .posts-list .section-link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   font-weight: 500;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.4);

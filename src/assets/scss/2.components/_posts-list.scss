@@ -1,5 +1,19 @@
 .posts-list {
 
+	&.bg-white {
+		height: 100%;
+		padding: 19px 22px 22px;
+		margin: 0 -22px;
+
+		@include media-breakpoint-up(md) {
+			margin: 0;
+		}
+		@include media-breakpoint-up(lg) {
+			padding: 19px 34px;
+		}
+	}
+	// &.bg-white
+
 	.section-title {
 		display: inline-block;
 		font: {
@@ -31,7 +45,7 @@
 			margin-bottom: 5rem;
 
 			@include media-breakpoint-up(md) {
-				margin-bottom: 3.25rem;
+				margin-bottom: 2.875rem;
 			}
 		}
 		// &:last-of-type
@@ -51,11 +65,11 @@
 		}
 		// .post-title
 
-		.post-date {
+		.post-datetime {
 			font-size: 0.75rem;
 			color: rgba($black, 0.4);
 		}
-		// .post-date
+		// .post-datetime
 	}
 	// post-item
 

@@ -1,0 +1,90 @@
+.posts-grid {
+
+
+}
+// .posts-grid
+
+.post-card {
+	background-color: $white;
+
+	.post-img {
+		height: 240px;
+		display: flex;
+		flex-direction: column-reverse;
+
+		&:after {
+			display: block;
+			content: '';
+			width: 100%;
+			height: 3px;
+			@extend .brand-gradient;
+		}
+		// &:after
+	}
+	// .post-img
+
+	.post-card-wrapper {
+		display: flex;
+		flex-direction: column;
+		padding: 1.375rem 1.375rem 9px;
+
+		@include media-breakpoint-up(md) {
+			min-height: 205px;
+			padding-left: 1rem;
+		}
+	}
+	// .post-card-wrapper
+
+	.post-tags {
+		margin-bottom: 1rem;
+
+		a {
+			display: inline-block;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			text-decoration: underline;
+			color: rgba($black, 0.6);
+			margin-right: 0.875rem;
+
+			@include media-breakpoint-up(md) {
+				margin-right: 11px;
+			}
+
+			&:hover {
+				color: $black;
+			}
+			// &:hover
+		}
+		// a
+	}
+	// .post-tags
+
+	.post-title {
+		flex-grow: 1;
+		font: {
+			family: $font-secondary;
+			size: 1.375rem;
+			size: 700;
+		}
+		text-transform: uppercase;
+		margin-bottom: 2.5rem;
+
+		a {
+
+			&:hover {
+				color: $brand-red;
+			}
+			// &:hover
+		}
+		// a
+	}
+	// .post-title
+
+	.post-datetime {
+		font-size: 0.875rem;
+		line-height: 1.2;
+		color: rgba($black, 0.4);
+	}
+	// .post-datetime
+}
+// .post-card

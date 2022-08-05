@@ -16,30 +16,6 @@
 	}
 	// &.bg-white
 
-	.section-title {
-		display: inline-block;
-		font: {
-			family: $font-secondary;
-			size: 1.875rem;
-			weight: 700;
-		}
-		text-transform: uppercase;
-		margin-bottom: 1rem;
-
-		&:after {
-			@extend .brand-gradient;
-
-			@include media-breakpoint-up(md) {
-				display: block;
-				content: '';
-				width: 100%;
-				height: 1px;
-			}
-		}
-		// &:after
-	}
-	// .section-title
-
 	.post-item {
 		flex: 0 0 100%;
 		margin-bottom: 1.1875rem;
@@ -54,12 +30,17 @@
 		// &:last-of-type
 
 		.post-title {
-			font-size: 1.125rem;
+			font: {
+				family: $font-primary;
+				weight: 400;
+			}
+			text-transform: none;
 			margin-bottom: 7px;
 
 			a {
 
 				&:hover {
+					color: $black;
 					text-decoration: underline;
 				}
 				// &:hover

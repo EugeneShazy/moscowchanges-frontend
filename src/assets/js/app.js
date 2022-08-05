@@ -1,6 +1,7 @@
-import Swiper, { Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
 import '../scss/main.scss';
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -80,10 +81,39 @@ document.addEventListener('DOMContentLoaded', function() {
     desktopHeaderCollapsibleElementTrigger(desktopCollapsibleMenuArea, desktopMenuTrigger, desktopMenuPanel);
   });
 
-  /* Init Swiper */
-  const swiper = new Swiper('.swiper-hero', {
-    // configure Swiper to use modules
+  /* Hero Swiper */
+  const swiperHero = new Swiper('.swiper-hero', {
     modules: [Pagination],
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
+  /* Posts Swiper */
+  const swiperPosts = new Swiper('.swiper-posts', {
+    modules: [Navigation, Pagination],
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      550: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      750: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      992: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,

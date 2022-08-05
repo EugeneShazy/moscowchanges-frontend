@@ -1,0 +1,21 @@
+.swiper-posts {
+
+	.post-img {
+		height: 176px;
+		margin-bottom: 0.75rem;
+	}
+	// .post-img
+
+	.post-tags {
+		margin-bottom: 0.75rem;
+	}
+	// .post-tags
+
+	.post-title {
+		@extend .h4;
+		min-height: 116px;
+		margin-bottom: 6px;
+	}
+	// .post-title
+}
+// .swiper-posts

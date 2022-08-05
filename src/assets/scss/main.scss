@@ -18,8 +18,13 @@
 @import '2.components/icons';
 @import '2.components/search-form';
 @import '2.components/social-links';
-@import '2.components/swiper-hero';
 @import '2.components/posts-list';
-@import '2.components/posts-grid';
+@import '2.components/post-card';
+@import '2.components/post-tags';
+@import '2.components/swiper';
+@import '2.components/swiper-hero';
+@import '2.components/swiper-posts';
+
 
 /* Sections */
+@import '3.sections/section-posts-carousel';

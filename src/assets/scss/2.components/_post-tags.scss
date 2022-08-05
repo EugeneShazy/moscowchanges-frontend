@@ -1,0 +1,23 @@
+.post-tags {
+	margin-bottom: 1rem;
+
+	a {
+		display: inline-block;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		text-decoration: underline;
+		color: rgba($black, 0.6);
+		margin-right: 0.875rem;
+
+		@include media-breakpoint-up(md) {
+			margin-right: 11px;
+		}
+
+		&:hover {
+			color: $black;
+		}
+		// &:hover
+	}
+	// a
+}
+// .post-tags

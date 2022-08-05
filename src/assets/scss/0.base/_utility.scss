@@ -32,3 +32,17 @@
 	background-color: $white;
 }
 // .bg-white
+
+.bottom-gradient {
+	display: inline-block;
+
+	&:after {
+		@extend .brand-gradient;
+		display: block;
+		content: '';
+		width: 100%;
+		height: 1px;
+	}
+	// &:after
+}
+// .bottom-gradient

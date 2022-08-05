@@ -38,3 +38,37 @@ body {
 	line-height: 1.1;
 }
 // body
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font: {
+		family: $font-secondary;
+		weight: 700;
+	}
+	text-transform: uppercase;
+	color: $black;
+	margin-bottom: 1rem;
+
+	a {
+		&:hover {
+			color: $brand-red;
+		}
+		// &:hover
+	}
+	// a
+}
+
+.h2 {
+	font-size: 1.875rem;
+}
+// .h2
+
+.h3 {
+	font-size: 1.375rem;
+}
+// .h3
+
+.h4 {
+	font-size: 1.125rem;
+}
+// .h4

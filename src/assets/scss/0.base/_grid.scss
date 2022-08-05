@@ -6,17 +6,16 @@
 	@include media-breakpoint-up(md) {
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
 	}
 }
 // .grid
 
 .col {
-	margin-bottom: 50px;
+	box-sizing: content-box;
+	margin-bottom: 30px;
 
 	@include media-breakpoint-up(md) {
 		padding: 0 15px;
-		margin-bottom: 30px;
 	}
 
 	&:first-child {
@@ -41,11 +40,6 @@
 		width: 100%;
 	}
 	// &:only-child
-
-	.col {
-		margin-bottom: 30px;
-	}
-	// .col
 }
 // .col
 
@@ -53,9 +47,29 @@
 	@extend .col;
 
 	@include media-breakpoint-up(md) {
-		flex: 0 0 calc(33.33333% - 5px);
-		width: calc(33.33333% - 5px);
-		margin-bottom: 0 !important;
+		flex: 0 0 calc(33.33333% - 20px);
+		width: calc(33.33333% - 20px);
+
+		&:nth-child(3n) {
+			padding-right: 0;
+		}
+		// &:nth-child(3n)
+
+		&:nth-child(3n + 1) {
+			padding-left: 0;
+		}
+		// &:nth-child(3n + 1)
+
+		&:last-child {
+			padding-right: 15px;
+		}
+		// &:last-child
+
+		&:nth-last-child(2),
+		&:nth-last-child(3) {
+			margin-bottom: 0 !important;
+		}
+		// &:nth-last-child(2), &:nth-last-child(3)
 	}
 }
 // .col-33
@@ -64,8 +78,8 @@
 	@extend .col;
 
 	@include media-breakpoint-up(md) {
-		flex: 0 0 50%;
-		width: 50%;
+		flex: 0 0 calc(50% - 15px);
+		width: calc(50% - 15px);
 
 		&:last-child {
 			padding-right: 15px;
@@ -94,8 +108,8 @@
 	@extend .col;
 
 	@include media-breakpoint-up(md) {
-		flex: 0 0 calc(66.66667% + 5px);
-		width: calc(66.66667% + 5px);
+		flex: 0 0 calc(66.66667% - 10px);
+		width: calc(66.66667% - 10px);
 		margin-bottom: 0 !important;
 	}
 }

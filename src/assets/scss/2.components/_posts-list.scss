@@ -5,6 +5,7 @@
 	&.bg-white {
 		height: 100%;
 		padding: 19px 22px 22px;
+		box-sizing: border-box;
 		margin: 0 -22px;
 
 		@include media-breakpoint-up(md) {

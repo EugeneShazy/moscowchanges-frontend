@@ -15,6 +15,12 @@
 	font-style: normal;
 }
 @font-face {
+	font-family: 'DIN Pro';
+	src: url('../fonts/DINPro-Black.ttf');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
 	font-family: 'DIN Pro Condensed';
 	src: url('../fonts/DINPro-CondensedMedium.ttf');
 	font-weight: 500;
@@ -46,7 +52,6 @@ h1, h2, h3, h4, h5, h6,
 		weight: 700;
 	}
 	text-transform: uppercase;
-	color: $black;
 	margin-bottom: 1rem;
 
 	a {
@@ -72,3 +77,12 @@ h1, h2, h3, h4, h5, h6,
 	font-size: 1.125rem;
 }
 // .h4
+
+.menu {
+
+	.menu-link {
+		font-family: $font-secondary;
+		text-transform: uppercase;
+	}
+}
+// .menu

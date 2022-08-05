@@ -16,6 +16,14 @@
 }
 // .mobile-only
 
+.desktop-only {
+
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+// .desktop-only
+
 .brand-gradient {
 	background: linear-gradient(270deg, $brand-red 0%, #098DD7 100%);
 }

@@ -59,6 +59,10 @@
 		@include media-breakpoint-up(lg) {
 			font-size: 3.375rem;
 		}
+
+		a {
+			color: $white;
+		}
 	}
 	// .swiper-hero-title
 

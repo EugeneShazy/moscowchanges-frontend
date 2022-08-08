@@ -1,10 +1,9 @@
 .post-card {
 	background-color: $white;
 
-	.post-img {
-		height: 240px;
+	picture {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 
 		&:after {
 			display: block;
@@ -14,8 +13,14 @@
 			@extend .brand-gradient;
 		}
 		// &:after
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+		// img
 	}
-	// .post-img
+	// .picture
 
 	.post-card-wrapper {
 		display: flex;

@@ -106,10 +106,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPartialsPlugin({
       path: path.resolve(environment.paths.source, 'partials/header.html'),
-      priority: 'high'
+      template_filename: '*',
+      priority: 'high',
     }),
     new HtmlWebpackPartialsPlugin({
-      path: path.resolve(environment.paths.source, 'partials/footer.html')
+      path: path.resolve(environment.paths.source, 'partials/footer.html'),
+      template_filename: '*',
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',

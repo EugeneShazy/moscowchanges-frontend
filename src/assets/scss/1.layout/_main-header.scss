@@ -12,6 +12,19 @@
 	}
 	// &:before
 
+	.menu-item {
+
+		&.current-menu-item {
+
+			.menu-link {
+				color: $brand-red;
+			}
+			// .menu-link
+		}
+		// &.current-menu-item
+	}
+	// .menu-item
+
 	hr.brand-gradient {
 		height: 2px;
 	}

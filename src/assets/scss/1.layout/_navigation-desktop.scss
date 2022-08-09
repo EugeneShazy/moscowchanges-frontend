@@ -60,6 +60,43 @@
 		@include media-breakpoint-up(xxl) {
 			margin-right: 34px;
 		}
+
+		&.current-menu-item {
+
+			.menu-link {
+
+				&:hover {
+					cursor: default;
+
+					&:before {
+						display: none;
+					}
+					// &:before
+				}
+				// &:hover
+
+				&:after {
+					display: block;
+					width: calc(100% - 1rem);
+					height: 1px;
+					@extend .brand-gradient;
+					position: absolute;
+					bottom: -34px;
+					left: 0.5rem;
+					@include transition;
+
+					@include media-breakpoint-up(lg) {
+						content: '';
+					}
+					@include media-breakpoint-up(xl) {
+						bottom: -32px;
+					}
+				}
+				// &:after
+			}
+			// .menu-link
+		}
+		// &.current-menu-item
 	}
 	// .menu-item
 

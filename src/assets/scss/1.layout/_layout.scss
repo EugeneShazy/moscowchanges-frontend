@@ -13,17 +13,6 @@ body {
 }
 // .page-wrapper
 
-.main-content {
-	position: relative;
-	z-index: -2;
-}
-// .main-content
-
-section {
-	margin-bottom: 50px;
-}
-// section
-
 .container {
 	width: 100%;
 	max-width: 1170px;
@@ -38,3 +27,28 @@ section {
 	}
 }
 // .container
+
+.main-content {
+	position: relative;
+	z-index: -2;
+}
+// .main-content
+
+section {
+	margin-bottom: 50px;
+}
+// section
+
+aside {
+	margin-bottom: 50px;
+
+	@include media-breakpoint-up(md) {
+		margin-bottom: 30px;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	// &:last-of-type
+}
+// aside

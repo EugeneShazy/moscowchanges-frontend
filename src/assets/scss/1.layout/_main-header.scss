@@ -12,15 +12,9 @@
 	}
 	// &:before
 
-	hr {
-		display: block;
-		content: '';
-		width: 100%;
+	hr.brand-gradient {
 		height: 2px;
-		@extend .brand-gradient;
-		border: none;
-		margin: 0;
 	}
-	// hr
+	// hr.brand-gradient
 }
 // .main-header

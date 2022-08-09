@@ -29,6 +29,16 @@
 }
 // .brand-gradient
 
+hr.brand-gradient {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	border: none;
+	margin: 0;
+}
+// hr.brand-gradient
+
 .bg-img {
 	background-size: cover;
 	background-position: center center;

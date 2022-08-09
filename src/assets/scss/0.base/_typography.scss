@@ -10,8 +10,20 @@
 }
 @font-face {
 	font-family: 'DIN Pro';
+	src: url('../fonts/DINPro-Italic.ttf');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'DIN Pro';
 	src: url('../fonts/DINPro-Medium.ttf');
 	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DIN Pro';
+	src: url('../fonts/dinpro_bold.otf');
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
@@ -44,6 +56,15 @@ body {
 	line-height: 1.1;
 }
 // body
+
+.menu {
+
+	.menu-link {
+		font-family: $font-secondary;
+		text-transform: uppercase;
+	}
+}
+// .menu
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -78,11 +99,19 @@ h1, h2, h3, h4, h5, h6,
 }
 // .h4
 
-.menu {
+p {
 
-	.menu-link {
-		font-family: $font-secondary;
-		text-transform: uppercase;
+	&.lead {
+		font: {
+			size: 1.125rem;
+			weight: 500;
+		}
 	}
+	// &.lead
 }
-// .menu
+// p
+
+i, em {
+	font-style: italic;
+}
+// i, em

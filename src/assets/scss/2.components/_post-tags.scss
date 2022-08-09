@@ -1,6 +1,12 @@
 .post-tags {
 	margin-bottom: 1rem;
 
+	.label {
+		font-weight: 500;
+		margin-right: 0.5rem;
+	}
+	// .label
+
 	a {
 		display: inline-block;
 		font-size: 0.75rem;

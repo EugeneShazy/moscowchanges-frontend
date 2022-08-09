@@ -6,6 +6,11 @@
 	}
 	// &.bg-white
 
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	// &:last-of-type
+
 	.section-title {
 		margin-bottom: 2.5rem;
 	}

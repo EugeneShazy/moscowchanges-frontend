@@ -19,14 +19,17 @@
 @import '2.components/icons';
 @import '2.components/search-form';
 @import '2.components/social-links';
-@import '2.components/posts-list';
+@import '2.components/post-list';
 @import '2.components/post-card';
 @import '2.components/post-tags';
 @import '2.components/swiper';
 @import '2.components/swiper-hero';
 @import '2.components/swiper-posts';
-
+@import '2.components/post-teaser-list';
 
 /* Sections */
 @import '3.sections/section-news';
 @import '3.sections/section-posts-carousel';
+@import '3.sections/section-post';
+
+/* Page Templates */

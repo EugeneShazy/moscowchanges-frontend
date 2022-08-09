@@ -1306,7 +1306,7 @@ section {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .main-navigation-desktop .desktop-menu-collapsible-panel {
     padding-right: 82px;
   }
@@ -1649,7 +1649,7 @@ section {
 }
 
 .icon-search, .search-form input[type=submit] {
-  background-image: url("data:image/svg+xml,%3Csvg width=%2728%27 height=%2728%27 viewBox=%270 0 28 28%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27 xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Crect width=%2728%27 height=%2728%27 fill=%27url%28%23pattern0%29%27/%3E%3Cdefs%3E%3Cpattern id=%27pattern0%27 patternContentUnits=%27objectBoundingBox%27 width=%271%27 height=%271%27%3E%3Cuse xlink:href=%27%23image0_269_2283%27 transform=%27scale%280.0357143%29%27/%3E%3C/pattern%3E%3Cimage id=%27image0_269_2283%27 width=%2728%27 height=%2728%27 xlink:href=%27data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACaElEQVRIibXWzW9NQRgG8N+99VFNUVJS8ZFGidAFiRCREBsSRKwl/jYrrElEIqxICIkEC19p0VakPkq0SmmpxXtPe+65c9p7K57NnJl5Z57zfswzU7EwNmAnetGNdvzBJEYxiAF8X2SfOVRKxrtxFLuxfJE9xvEA9zG9FMK9OCm8aQVvcQWfWiE8iFMJuw94J7xpExHYhDUFu3FcrNkvSrgL5wrzr3AHQyJ3eaxCP45gbW58DBdEnhvQVms7cR4rcnO3cRVfMJtYOyO8forNOdIO4fmzhQiPoS83fg+3UgsS+IkX2FH7cdgoKni8aFwVodmXGxvFzSbJMnzHNfyu9Ss4kDKsYpsIQ4a7GvPVDEZEzjP0YWWKsDfX/yFCsVQ8zn13oidF2J3rf1RSXU1iVH10ulKEebeblqgSTIvqzbCiaFBdzKBFtJmvfIW95wi/5Pob/pF0fYEweSyGc/3VomqXiv7c90+8TxG+Ua/yh5ZI1oU9uf4QvqUIv+J5bmwH9rdIVsFp9QX4MGVYrbV3zKsEcWP0N5onUcUZcVFneCPkrgFZgidFRWV6WhXhaRdXza8Ssq04qz6URIoGMFVcULwPz2gM56SQrOHadxXrsF2oVNmrYQyXa20pYQXHcbhkk1YxJi7kuaPXljAaFBLVbf66WQizQkOHsKUw1yFyOyh0OklIvEseiXNUEblcZr7IpvEZT3BDPKIGxIOreI4z0peYKot/Ee3C25VCnH9gQn1lZzghnZJPuFTmYREzQtgnxGGekn52EOEr87SnWcJW8Upo8tYi6f8iJDwtko78T8KMdEro7Gtc/wv2foKa5wklcwAAAABJRU5ErkJggg==%27/%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width=%2719%27 height=%2718%27 viewBox=%270 0 19 18%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath fill-rule=%27evenodd%27 clip-rule=%27evenodd%27 d=%27M13 7.5C13 10.5375 10.5371 13 7.5 13C4.46289 13 2 10.5375 2 7.5C2 4.46246 4.46289 2 7.5 2C10.5371 2 13 4.46246 13 7.5ZM11.8545 13.6075C10.627 14.4842 9.12402 15 7.5 15C3.35742 15 0 11.6422 0 7.5C0 3.35785 3.35742 0 7.5 0C11.6426 0 15 3.35785 15 7.5C15 9.10077 14.499 10.5844 13.6445 11.8023C13.6865 11.831 13.7275 11.8633 13.7656 11.8992L17.8223 15.6821C18.2266 16.0588 18.248 16.6915 17.8721 17.0955L17.4766 17.5195C17.335 17.6709 17.1582 17.7686 16.9707 17.8119C16.6572 17.8841 16.3154 17.8045 16.0625 17.569L12.0059 13.786C11.9473 13.7314 11.8965 13.6714 11.8545 13.6075Z%27 fill=%27%23525252%27/%3E%3C/svg%3E%0A");
 }
 
 .icon-telegram {

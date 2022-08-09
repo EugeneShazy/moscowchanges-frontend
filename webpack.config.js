@@ -6,6 +6,7 @@ const path = require('path');
 const fs = require('fs');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -103,6 +104,13 @@ module.exports = {
     ],
   },
   plugins: [
+    new HtmlWebpackPartialsPlugin({
+      path: path.resolve(environment.paths.source, 'partials/header.html'),
+      priority: 'high'
+    }),
+    new HtmlWebpackPartialsPlugin({
+      path: path.resolve(environment.paths.source, 'partials/footer.html')
+    }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
     }),

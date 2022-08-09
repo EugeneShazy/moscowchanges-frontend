@@ -211,7 +211,7 @@
 		transition: 0.1s all ease-in-out;
 		transform: translateY(-100%);
 
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			padding-right: 82px;
 		}
 

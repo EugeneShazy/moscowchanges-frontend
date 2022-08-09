@@ -15,6 +15,15 @@
 
 		> header {
 			padding: 19px 22px 22px 17px;
+
+			& + .post-content {
+				padding-top: 0.125rem;
+
+				@include media-breakpoint-up(md) {
+					padding-top: 1rem;
+				}
+			}
+			// & + .post-content
 		}
 		// > header
 
@@ -34,14 +43,14 @@
 		}
 		// .post-datetime
 
-		.post-text {
+		.post-content {
 			padding: 1.25rem 22px 30px;
 
 			@include media-breakpoint-up(md) {
-				padding: 1.5rem 34px 30px 17px;
+				padding: 1.5rem 34px 27px 17px;
 			}
 		}
-		// .post-text
+		// .post-content
 
 		p {
 			margin-bottom: 1.25rem;

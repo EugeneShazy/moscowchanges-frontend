@@ -2285,6 +2285,14 @@ a:hover .icon-vk {
 .section-post article > header {
   padding: 19px 22px 22px 17px;
 }
+.section-post article > header + .post-content {
+  padding-top: 0.125rem;
+}
+@media (min-width: 768px) {
+  .section-post article > header + .post-content {
+    padding-top: 1rem;
+  }
+}
 .section-post article .post-title {
   text-transform: none;
   margin-bottom: 15px;
@@ -2298,12 +2306,12 @@ a:hover .icon-vk {
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.4);
 }
-.section-post article .post-text {
+.section-post article .post-content {
   padding: 1.25rem 22px 30px;
 }
 @media (min-width: 768px) {
-  .section-post article .post-text {
-    padding: 1.5rem 34px 30px 17px;
+  .section-post article .post-content {
+    padding: 1.5rem 34px 27px 17px;
   }
 }
 .section-post article p {

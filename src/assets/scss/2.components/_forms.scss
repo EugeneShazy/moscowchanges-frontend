@@ -1,0 +1,30 @@
+input[type="text"] {
+	min-height: 29px;
+	font: {
+		family: $font-primary;
+		size: 0.75rem;
+		weight: 500;
+	}
+	color: black;
+	padding: 5px 40px 5px 14px;
+	border: 1px solid $gray-1;
+
+	@include placeholder {
+		color: rgba($black, 0.4);
+		@include transition;
+	}
+
+	&:active, &:focus {
+		@include placeholder {
+			color: rgba($black, 0.6);
+		}
+	}
+	// &:active, &:focus
+}
+// input[type="text"]
+
+input[type="submit"] {
+	cursor: pointer;
+	@include transition;
+}
+// input[type="submit"]

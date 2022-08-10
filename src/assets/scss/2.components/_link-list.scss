@@ -1,5 +1,20 @@
-.post-tags {
+.link-list {
 	margin-bottom: 1rem;
+
+	&.link-list-vertical {
+
+		a {
+			display: block;
+			margin: 0 0 11px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			// &:last-of-type
+		}
+		// a
+	}
+	// &.link-list-vertical
 
 	.label {
 		font-weight: 500;
@@ -26,4 +41,4 @@
 	}
 	// a
 }
-// .post-tags
+// .link-list

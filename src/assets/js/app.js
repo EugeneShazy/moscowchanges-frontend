@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
     modules: [Navigation, Pagination],
     slidesPerView: 1,
     slidesPerGroup: 1,
-    spaceBetween: 30,
+    spaceBetween: 18,
     breakpoints: {
       550: {
         slidesPerView: 2,
@@ -108,6 +108,11 @@ document.addEventListener('DOMContentLoaded', function() {
       992: {
         slidesPerView: 4,
         slidesPerGroup: 4,
+      },
+      1200: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 30,
       },
     },
     navigation: {

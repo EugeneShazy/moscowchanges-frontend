@@ -11,13 +11,12 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		max-width: 1920px;
 		height: 107px;
-		padding: 0 36px;
 		margin: 0 auto;
 		position: relative;
 
 		@include media-breakpoint-up(xxl) {
+			max-width: 1920px;
 			padding: 0 82px;
 		}
 	}

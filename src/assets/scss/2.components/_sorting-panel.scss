@@ -1,0 +1,36 @@
+.sorting-panel {
+	display: inline-flex;
+	align-items: center;
+	margin-bottom: 27px;
+
+	label {
+		font: {
+			size: 0.75rem;
+			weight: 500;
+		}
+		color: rgba($black, 0.4);
+		margin-right: 2.125rem;
+	}
+	// label
+
+	select {
+		appearance: none;
+		min-width: 171px;
+		font: {
+			family: $font-primary;
+			size: 0.75rem;
+			weight: 500;
+		}
+		color: rgba($black, 0.4);
+		padding: 5px 40px 5px 14px;
+		background: calc(100% - 14px) center / 11px 8px no-repeat url("data:image/svg+xml,%3Csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 6L0.73686 5.64421e-08L10.2631 8.89256e-07L5.5 6Z' fill='%23999999'/%3E%3C/svg%3E%0A");
+		border: 1px solid #E1E1E1;
+		cursor: pointer;
+
+		@include media-breakpoint-up(lg) {
+			min-width: 265px;
+		}
+	}
+	// select
+}
+// .sorting-panel

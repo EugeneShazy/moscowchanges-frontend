@@ -26,10 +26,14 @@
 @import '2.components/swiper-hero';
 @import '2.components/swiper-posts';
 @import '2.components/post-teaser-list';
+@import '2.components/sorting-panel';
+@import '2.components/author-card';
 
 /* Sections */
+@import '3.sections/section-hero-carousel';
 @import '3.sections/section-news';
 @import '3.sections/section-posts-carousel';
 @import '3.sections/section-post';
+@import '3.sections/section-single-author';
 
 /* Page Templates */

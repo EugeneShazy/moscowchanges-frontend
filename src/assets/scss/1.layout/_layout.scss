@@ -31,13 +31,18 @@ body {
 .main-content {
 	position: relative;
 	z-index: -2;
+
+	section {
+		margin-bottom: 50px;
+
+		&:first-of-type {
+			padding-top: 30px;
+		}
+		// &:first-of-type
+	}
+	// section
 }
 // .main-content
-
-section {
-	margin-bottom: 50px;
-}
-// section
 
 aside {
 	margin-bottom: 50px;

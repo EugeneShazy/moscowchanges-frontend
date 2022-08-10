@@ -1,0 +1,65 @@
+.author-card {
+
+	aside & {
+
+		img {
+			min-width: 170px;
+			width: 170px;
+			height: 170px;
+			border-radius: 50%;
+			margin-bottom: 1rem;
+		}
+		// img
+
+		.author-name {
+			font-size: 1.5rem;
+			line-height: 1.2;
+			margin-bottom: 0.75rem;
+		}
+		// .author-name
+
+		.author-tags {
+			margin-bottom: 0;
+
+			a {
+				display: block;
+				font-size: 1.0625rem;
+				margin: 0 0 11px;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				// &:last-of-type
+			}
+			// a
+		}
+		// .author-tags
+	}
+	// aside &
+
+	img {
+		width: 200px;
+		height: 260px;
+		margin-bottom: 1.125rem;
+	}
+	// img
+
+	.author-name {
+		font-family: $font-primary;
+		line-height: 1;
+		text-transform: none;
+		margin-bottom: 1.25px;
+	}
+	// .author-name
+
+	.author-tags {
+		@extend .post-tags;
+
+		a {
+			margin-right: 11px;
+		}
+		// a
+	}
+	// .author-tags
+}
+// .author-card

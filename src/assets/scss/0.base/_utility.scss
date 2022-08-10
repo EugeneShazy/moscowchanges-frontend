@@ -11,7 +11,7 @@
 .mobile-only {
 
 	@include media-breakpoint-up(md) {
-		display: none;
+		display: none !important;
 	}
 }
 // .mobile-only

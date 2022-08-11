@@ -1,0 +1,38 @@
+.swiper-gallery-thumbs {
+	position: relative;
+
+	.swiper-gallery-thumbs-carousel {
+		width: calc(100% - 90px);
+
+		@include media-breakpoint-up(xl) {
+			width: calc(100% - 60px);
+		}
+	}
+	// .swiper-gallery-thumbs-carousel
+
+	.swiper-navigation {
+		width: 100%;
+		position: absolute;
+		bottom: calc(50% - 9.5px);
+
+		.swiper-button-prev {
+			left: 22px;
+
+			@include media-breakpoint-up(xl) {
+				left: 0;
+			}
+		}
+		// .swiper-button-prev
+
+		.swiper-button-next {
+			right: 22px;
+
+			@include media-breakpoint-up(xl) {
+				right: 0;
+			}
+		}
+		// .swiper-button-next
+	}
+	// .swiper-navigation
+}
+// .swiper-gallery-thumbs

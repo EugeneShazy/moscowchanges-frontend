@@ -1,7 +1,8 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, Thumbs } from 'swiper';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
+import 'swiper/scss/thumbs';
 import '../scss/main.scss';
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -122,6 +123,29 @@ document.addEventListener('DOMContentLoaded', function() {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+    },
+  });
+
+  /* Gallery Swiper */
+  const gallerySwiperThumbs = new Swiper(".swiper-gallery-thumbs-carousel", {
+    modules: [Navigation],
+    spaceBetween: 0,
+    slidesPerView: 3,
+    breakpoints: {
+      550: {
+        slidesPerView: 4,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-gallery-thumbs-button-next",
+      prevEl: ".swiper-gallery-thumbs-button-prev",
+    },
+  });
+  const gallerySwiper = new Swiper(".swiper-gallery", {
+    modules: [Thumbs],
+    spaceBetween: 10,
+    thumbs: {
+      swiper: gallerySwiperThumbs,
     },
   });
 

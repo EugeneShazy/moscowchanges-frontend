@@ -46,6 +46,19 @@ hr.brand-gradient {
 }
 // .bg-img
 
+.bg-overlay {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba($black, 0.2);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+// .bg-overlay
+
 .bg-white {
 	background-color: $white;
 }
@@ -64,3 +77,26 @@ hr.brand-gradient {
 	// &:after
 }
 // .bottom-gradient
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+// .mb-0
+
+.age-badge {
+	flex-shrink: 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 31px;
+	height: 31px;
+	font: {
+		size: 1.375rem;
+		weight: 500;
+	}
+	color: $white;
+	padding-left: 2px;
+	background-color: #BDBDBD;
+	border-radius: 50%;
+}
+// .age-badge

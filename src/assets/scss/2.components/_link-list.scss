@@ -1,7 +1,11 @@
 .link-list {
+	display: flex;
+	align-items: center;
 	margin-bottom: 1rem;
 
 	&.link-list-vertical {
+		flex-direction: column;
+		align-items: flex-start;
 
 		a {
 			display: block;
@@ -15,6 +19,11 @@
 		// a
 	}
 	// &.link-list-vertical
+
+	.age-badge {
+		margin-right: 1.125rem;
+	}
+	// .age-badge
 
 	.label {
 		font-weight: 500;

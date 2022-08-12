@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   /* Gallery Swiper */
-  const gallerySwiperThumbs = new Swiper(".swiper-gallery-thumbs-carousel", {
+  const gallerySwiperThumbs = new Swiper('.swiper-gallery-thumbs-carousel', {
     modules: [Navigation],
     spaceBetween: 0,
     slidesPerView: 3,
@@ -137,17 +137,66 @@ document.addEventListener('DOMContentLoaded', function() {
       },
     },
     navigation: {
-      nextEl: ".swiper-gallery-thumbs-button-next",
-      prevEl: ".swiper-gallery-thumbs-button-prev",
+      nextEl: '.swiper-gallery-thumbs-button-next',
+      prevEl: '.swiper-gallery-thumbs-button-prev',
     },
   });
-  const gallerySwiper = new Swiper(".swiper-gallery", {
+  const gallerySwiper = new Swiper('.swiper-gallery', {
     modules: [Thumbs],
-    spaceBetween: 10,
     thumbs: {
       swiper: gallerySwiperThumbs,
     },
   });
+  const gallerySwiperThumbsModalVersion = new Swiper('.swiper-gallery-thumbs-carousel-modal-version', {
+    spaceBetween: 6,
+    slidesPerView: 4,
+  });
+  const gallerySwiperModalVersion = new Swiper('.swiper-gallery-modal-version', {
+    modules: [Navigation, Pagination, Thumbs],
+    navigation: {
+      enabled: false,
+    },
+    pagination: {
+      el: '.swiper-gallery-modal-version-pagination',
+      clickable: true,
+    },
+    thumbs: {
+      swiper: gallerySwiperThumbsModalVersion,
+    },
+    breakpoints: {
+      768: {
+        navigation: {
+          enabled: true,
+          nextEl: '.swiper-gallery-modal-version-button-next',
+          prevEl: '.swiper-gallery-modal-version-button-prev',
+        },
+        pagination: {
+          enabled: false,
+        }
+      },
+    },
+  });
+
+  const galleryModal = document.getElementById('galleryModal');
+  const galleryModalOpenElements = document.querySelectorAll('.swiper-gallery .swiper-slide');
+
+  galleryModalOpenElements.forEach(function (openSlide) {
+    openSlide.addEventListener('click', function (event) {
+      const activeSlideNumber = this.dataset.slideIndex;
+      gallerySwiperModalVersion.slideTo(activeSlideNumber - 1, 0, false);
+      galleryModal.classList.add('active');
+      document.body.classList.add('modal-open');
+    });
+  });
+
+  window.onclick = function(event) {
+    if (event.target == galleryModal) {
+      const activeSlideNumber = document.querySelector('.swiper-gallery-modal-version .swiper-slide-active').dataset.slideIndex;
+      gallerySwiper.slideTo(activeSlideNumber - 1, 0, false);
+      galleryModal.classList.remove('active');
+      document.body.classList.remove('modal-open');
+    }
+  };
 
   /* On Resize */
   window.addEventListener('resize', function () {

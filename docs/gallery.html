@@ -124,7 +124,7 @@
 						<a class="menu-link" href="javascript:void(0);">Интервью</a>
 					</li>
 					<li class="menu-item">
-						<a class="menu-link" href="javascript:void(0);">Фотогалерея</a>
+						<a class="menu-link" href="gallery.html">Фотогалерея</a>
 					</li>
 					<li class="menu-item">
 						<a class="menu-link" href="javascript:void(0);">Блоги</a>
@@ -233,27 +233,27 @@
 								<div class="swiper swiper-gallery">
 									<div class="swiper-wrapper">
 
-										<div class="swiper-slide">
+										<div class="swiper-slide" data-slide-index="1">
 											<img src="assets/img/Gallery-01.jpg" alt="">
 										</div><!-- .swiper-slide 1 -->
 
-										<div class="swiper-slide">
+										<div class="swiper-slide" data-slide-index="2">
 											<img src="assets/img/Gallery-02.jpg" alt="">
 										</div><!-- .swiper-slide 2 -->
 
-										<div class="swiper-slide">
+										<div class="swiper-slide" data-slide-index="3">
 											<img src="assets/img/Gallery-03.jpg" alt="">
 										</div><!-- .swiper-slide 3 -->
 
-										<div class="swiper-slide">
+										<div class="swiper-slide" data-slide-index="4">
 											<img src="assets/img/Gallery-01.jpg" alt="">
 										</div><!-- .swiper-slide 4 -->
 
-										<div class="swiper-slide">
+										<div class="swiper-slide" data-slide-index="5">
 											<img src="assets/img/Gallery-02.jpg" alt="">
 										</div><!-- .swiper-slide 5 -->
 
-										<div class="swiper-slide">
+										<div class="swiper-slide" data-slide-index="6">
 											<img src="assets/img/Gallery-03.jpg" alt="">
 										</div><!-- .swiper-slide 6 -->
 
@@ -292,10 +292,14 @@
 										</div><!-- .swiper-wrapper -->
 
 									</div><!-- .swiper-gallery-thumbs-carousel -->
-									<div class="swiper-navigation swiper-gallery-thumbs-navigation">
-										<div class="swiper-button swiper-button-next swiper-gallery-thumbs-button-next"></div>
-										<div class="swiper-button swiper-button-prev swiper-gallery-thumbs-button-prev"></div>
-									</div><!-- .swiper-gallery-thumbs-navigation -->
+									<nav class="swiper-navigation swiper-gallery-thumbs-navigation">
+										<div class="swiper-button swiper-button-next swiper-gallery-thumbs-button-next">
+											<span class="visually-hidden">Previous Slide</span>
+										</div>
+										<div class="swiper-button swiper-button-prev swiper-gallery-thumbs-button-prev">
+											<span class="visually-hidden">Next Slide</span>
+										</div>
+									</nav><!-- .swiper-gallery-thumbs-navigation -->
 								</div><!-- .swiper-gallery-thumbs -->
 
 							</div><!-- .col-carousel -->
@@ -472,6 +476,90 @@
 
 		</main><!-- .main-content -->
 
+		<!-- Gallery Modal -->
+		<div id="galleryModal" class="modal modal-gallery">
+			<div class="modal-content">
+
+				<div class="swiper swiper-gallery-modal-version">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide" data-slide-index="1">
+							<img src="assets/img/Gallery-01.jpg" alt="">
+						</div><!-- .swiper-slide 1 -->
+
+						<div class="swiper-slide" data-slide-index="2">
+							<img src="assets/img/Gallery-02.jpg" alt="">
+						</div><!-- .swiper-slide 2 -->
+
+						<div class="swiper-slide" data-slide-index="3">
+							<img src="assets/img/Gallery-03.jpg" alt="">
+						</div><!-- .swiper-slide 3 -->
+
+						<div class="swiper-slide" data-slide-index="4">
+							<img src="assets/img/Gallery-01.jpg" alt="">
+						</div><!-- .swiper-slide 4 -->
+
+						<div class="swiper-slide" data-slide-index="5">
+							<img src="assets/img/Gallery-02.jpg" alt="">
+						</div><!-- .swiper-slide 5 -->
+
+						<div class="swiper-slide" data-slide-index="6">
+							<img src="assets/img/Gallery-03.jpg" alt="">
+						</div><!-- .swiper-slide 6 -->
+
+					</div><!-- .swiper-wrapper -->
+
+					<div class="swiper-pagination swiper-gallery-modal-version-pagination swiper-pagination-light"></div>
+
+				</div><!-- .swiper-gallery-modal-version -->
+
+				<nav class="swiper-navigation swiper-navigation-light">
+					<div class="swiper-button swiper-button-prev swiper-gallery-modal-version-button-prev">
+						<span class="visually-hidden">Previous Slide</span>
+					</div>
+					<div class="swiper-button swiper-gallery-modal-version-button-next">
+						<span class="visually-hidden">Next Slide</span>
+					</div>
+				</nav><!-- .swiper-navigation -->
+
+				<div class="swiper-gallery-thumbs">
+					<div thumbsSlider="" class="swiper swiper-gallery-thumbs-carousel-modal-version">
+
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<img src="assets/img/Gallery-thumb-01.jpg" alt="">
+							</div><!-- .swiper-slide 1 -->
+
+							<div class="swiper-slide">
+								<img src="assets/img/Gallery-thumb-02.jpg" alt="">
+							</div><!-- .swiper-slide 2 -->
+
+							<div class="swiper-slide">
+								<img src="assets/img/Gallery-thumb-03.jpg" alt="">
+							</div><!-- .swiper-slide 3 -->
+
+							<div class="swiper-slide">
+								<img src="assets/img/Gallery-thumb-04.jpg" alt="">
+							</div><!-- .swiper-slide 4 -->
+
+							<div class="swiper-slide">
+								<img src="assets/img/Gallery-thumb-01.jpg" alt="">
+							</div><!-- .swiper-slide 5 -->
+
+							<div class="swiper-slide">
+								<img src="assets/img/Gallery-thumb-02.jpg" alt="">
+							</div><!-- .swiper-slide 6 -->
+
+						</div><!-- .swiper-wrapper -->
+
+					</div><!-- .swiper-gallery-thumbs-carousel-modal-version -->
+				</div><!-- .swiper-gallery-thumbs -->
+
+			</div><!-- .modal-content -->
+
+		</div><!-- #galleryModal -->
+
 	<footer class="main-footer">
 	<div class="container">
 		<div class="grid">
@@ -553,7 +641,7 @@
 								<a class="menu-link" href="javascript:void(0);">Репортаж</a>
 							</li>
 							<li class="menu-item">
-								<a class="menu-link" href="javascript:void(0);">Фотогалерея</a>
+								<a class="menu-link" href="gallery.html">Фотогалерея</a>
 							</li>
 							<li class="menu-item">
 								<a class="menu-link" href="javascript:void(0);">Блоги</a>

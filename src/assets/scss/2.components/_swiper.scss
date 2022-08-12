@@ -1,5 +1,14 @@
 .swiper-navigation {
 
+	&.swiper-navigation-light {
+
+		.swiper-button {
+			background-image: url("data:image/svg+xml,%3Csvg width='11' height='20' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 19.5L9.5 10.5L1 0.999999' stroke='%23989898'/%3E%3C/svg%3E%0A");
+		}
+		// .swiper-button
+	}
+	// &.swiper-navigation-light
+
 	.swiper-button {
 		width: 9px;
 		height: 19px;
@@ -7,6 +16,7 @@
 		top: auto;
 		bottom: 0;
 		z-index: 99;
+		cursor: pointer;
 
 		&.swiper-button-prev {
 			transform: rotate(180deg);
@@ -21,6 +31,7 @@
 
 		&.swiper-button-disabled {
 			opacity: 0.2;
+			cursor: default;
 		}
 		// &.swiper-button-disabled
 
@@ -66,3 +77,13 @@
 	// .swiper-pagination-bullet
 }
 // .swiper-pagination
+
+.swiper-gallery-thumbs {
+	margin-bottom: 50px;
+
+	.swiper-slide {
+		cursor: pointer;
+	}
+	// .swiper-slide
+}
+// .swiper-gallery-thumbs

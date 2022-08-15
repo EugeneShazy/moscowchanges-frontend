@@ -1143,12 +1143,14 @@ body {
 }
 
 .main-content {
+  margin-bottom: 91px;
   position: relative;
   top: 91px;
   z-index: -2;
 }
 @media (min-width: 992px) {
   .main-content {
+    margin-bottom: 113px;
     top: 113px;
   }
 }
@@ -3094,6 +3096,7 @@ section.section-hero-carousel:first-of-type {
   text-indent: -99999px;
   width: 18px;
   height: 17px;
+  background-size: cover !important;
   border: none;
   opacity: 0.4;
   position: absolute;
@@ -3325,6 +3328,72 @@ section.section-hero-carousel:first-of-type {
 }
 .modal-gallery .swiper-slide img {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section-galleries-archive > .container > .grid {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.section-galleries-archive .col-sidebar {
+  padding: 30px 0 34px;
+}
+@media (min-width: 768px) {
+  .section-galleries-archive .col-sidebar {
+    padding: 50px 22px 50px 12px;
+  }
+}
+@media (min-width: 992px) {
+  .section-galleries-archive .col-sidebar {
+    padding-right: 44px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-galleries-archive .col-sidebar {
+    padding-left: 34px;
+  }
+}
+.section-galleries-archive .col-main {
+  padding-bottom: 1.25rem;
+}
+@media (min-width: 768px) {
+  .section-galleries-archive .col-main {
+    padding: 50px 0 3rem 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-galleries-archive .col-main {
+    padding-right: 34px;
+  }
+}
+@media (min-width: 1400px) {
+  .section-galleries-archive .col-main {
+    padding-left: 44px;
+  }
+}
+.section-galleries-archive .col-main .sorting-panel {
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .section-galleries-archive .col-main .sorting-panel {
+    float: right;
+    margin-bottom: 40px;
+  }
+}
+.section-galleries-archive .post-card picture {
+  margin-bottom: 0.75rem;
+}
+.section-galleries-archive .post-card picture:after {
+  display: none;
+}
+.section-galleries-archive .post-card .post-card-wrapper {
+  min-height: 0;
+  padding: 0;
+}
+.section-galleries-archive .post-card .post-title {
+  font-size: 1.125rem;
+  margin-bottom: 0;
 }
 
 /* Page Templates */

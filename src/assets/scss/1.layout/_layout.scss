@@ -26,11 +26,13 @@ body {
 // .container
 
 .main-content {
+	margin-bottom: 91px;
 	position: relative;
 	top: 91px;
 	z-index: -2;
 
 	@include media-breakpoint-up(lg) {
+		margin-bottom: 113px;
 		top: 113px
 	}
 	section {

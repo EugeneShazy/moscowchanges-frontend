@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Архив авторов | MoscowChanges 2.0</title>
+		<title>Архив фотогалерей | MoscowChanges 2.0</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script defer src="assets/js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
 	<body><div id="pageWrapper" class="page-wrapper">
@@ -131,82 +131,77 @@
 					</li>
 				</ul><!-- #navigationPrimaryDesktop -->
 
-				<div id="collapsibleSearchFormDesktopArea">
-					<a href="" id="searchFormDesktopTrigger" class="search-form-trigger" aria-expanded="false">
-						<span class="icon icon-search"></span>
-					</a>
+				<a href="" id="searchFormDesktopTrigger" class="search-form-trigger" aria-expanded="false">
+					<span class="icon icon-search"></span>
+				</a><!-- #searchFormDesktopTrigger -->
 
-					<!-- Desktop Search Form -->
-					<form role="search" method="get" id="searchFormDesktop" class="search-form" action="" >
-						<input type="text" value="" name="" id="" placeholder="Поиск" />
-						<input type="submit" id="searchFormDesktopSubmit" />
-					</form>
-				</div><!-- #collapsibleSearchFormDesktopArea -->
-
-				<div id="collapsibleMenuDesktopArea">
-					<!-- Desktop Hamburger -->
-					<button id="collapsibleMenuDesktopTrigger" class="hamburger" type="button" aria-expanded="false" aria-controls="collapsible-menu-desktop">
-						<span class="visually-hidden">Toggle Menu</span>
-						<span class="hamburger-line"></span>
-					</button>
-
-					<!-- Desktop Collapsible Panel -->
-					<div id="desktopMenuPanel" class="desktop-menu-collapsible-panel">
-
-						<!-- Desktop Secondary Navigation Menu -->
-						<ul class="menu" id="navigationSecondaryDesktop">
-							<li class="menu-item">
-								<a class="menu-link" href="javascript:void(0);">Архив газеты pdf</a>
-							</li>
-							<li class="menu-item">
-								<a class="menu-link" href="javascript:void(0);">О проекте</a>
-							</li>
-							<li class="menu-item">
-								<a class="menu-link" href="javascript:void(0);">Контакты</a>
-							</li>
-						</ul><!-- #navigationSecondaryDesktop -->
-
-						<hr class="brand-gradient">
-
-						<!-- Desktop Social Links -->
-						<ul class="social-links">
-							<li>
-								<a href="javascript:void(0);">
-                                            <span class="icon icon-telegram">
-                                                <span class="visually-hidden">Наш Телеграм-канал</span>
-                                            </span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">
-                                            <span class="icon icon-youtube">
-                                                <span class="visually-hidden">Наш YouTube-канал</span>
-                                            </span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">
-                                            <span class="icon icon-vk">
-                                                <span class="visually-hidden">Мы ВКонтакте</span>
-                                            </span>
-								</a>
-							</li>
-						</ul><!-- .social-links -->
-
-					</div><!-- .desktop-menu-collapsible-panel -->
-				</div><!-- #collapsibleMenuDesktopArea -->
+				<button id="collapsibleMenuDesktopTrigger" class="hamburger" type="button" aria-expanded="false" aria-controls="collapsible-menu-desktop">
+					<span class="visually-hidden">Toggle Menu</span>
+					<span class="hamburger-line"></span>
+				</button><!-- #collapsibleMenuDesktopTrigger -->
 
 			</div><!-- .container -->
 
 		</nav>
 		<!-- .main-navigation-desktop -->
 
+		<!-- Desktop Search Form -->
+		<form role="search" method="get" id="searchFormDesktop" class="search-form search-form-desktop" action="" >
+			<input type="text" value="" name="" id="" placeholder="Поиск" />
+			<input type="submit" id="searchFormDesktopSubmit" />
+		</form>
+
+		<!-- Desktop Collapsible Panel -->
+		<div id="desktopMenuPanel" class="desktop-menu-collapsible-panel">
+
+			<!-- Desktop Secondary Navigation Menu -->
+			<ul class="menu" id="navigationSecondaryDesktop">
+				<li class="menu-item">
+					<a class="menu-link" href="javascript:void(0);">Архив газеты pdf</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-link" href="javascript:void(0);">О проекте</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-link" href="javascript:void(0);">Контакты</a>
+				</li>
+			</ul><!-- #navigationSecondaryDesktop -->
+
+			<hr class="brand-gradient">
+
+			<!-- Desktop Social Links -->
+			<ul class="social-links">
+				<li>
+					<a href="javascript:void(0);">
+                                            <span class="icon icon-telegram">
+                                                <span class="visually-hidden">Наш Телеграм-канал</span>
+                                            </span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+                                            <span class="icon icon-youtube">
+                                                <span class="visually-hidden">Наш YouTube-канал</span>
+                                            </span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+                                            <span class="icon icon-vk">
+                                                <span class="visually-hidden">Мы ВКонтакте</span>
+                                            </span>
+					</a>
+				</li>
+			</ul><!-- .social-links -->
+
+		</div><!-- .desktop-menu-collapsible-panel -->
+
 	</header><!-- .main-header -->
 
 
 		<main class="main-content" aria-label="Content">
 
-			<section class="section-authors-archive">
+			<section class="section-galeries-archive">
 				<div class="container bg-white">
 					<div class="grid">
 
@@ -214,11 +209,11 @@
 
 							<aside>
 								<header>
-									<h1 class="section-title h1 bottom-gradient">Авторы</h1>
+									<h1 class="section-title h2 bottom-gradient">Фотогалерея</h1>
 								</header>
 								<div class="link-list link-list-vertical">
-									<a href="javascript:void(0);">Моя Москва</a>
 									<a href="javascript:void(0);">Куда пойти</a>
+									<a href="javascript:void(0);">Моя Москва</a>
 									<a href="javascript:void(0);">Новости</a>
 									<a href="javascript:void(0);">Реновация</a>
 								</div><!-- .link-list -->
@@ -228,12 +223,13 @@
 
 						<div class="col-main">
 
-							<div class="filter-panel">
-								<form action="">
-									<input type="text" name="filter-authors" id="filterAuthorsInput" placeholder="Выбрать автора">
-									<input type="submit">
-								</form>
-							</div><!-- .filter-panel -->
+							<div class="sorting-panel">
+								<label for="authorSortingSelectList">Сортировать</label>
+								<select name="sorting" id="authorSortingSelectList">
+									<option value="popularity">По популярности</option>
+									<option value="name">По имени</option>
+								</select>
+							</div><!-- .sorting-panel -->
 
 							<div class="grid authors-grid">
 
@@ -360,7 +356,7 @@
 
 					</div><!-- .grid -->
 				</div><!-- .container -->
-			</section><!-- .section-authors-archive -->
+			</section><!-- .section-galeries-archive -->
 
 			<section class="section-banner">
 				<div class="container">

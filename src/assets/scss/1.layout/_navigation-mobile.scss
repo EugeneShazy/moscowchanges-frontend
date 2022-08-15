@@ -1,4 +1,7 @@
 .main-navigation-mobile {
+	width: 100%;
+	background-color: $white;
+	position: fixed;
 
 	@include media-breakpoint-up(lg) {
 		display: none;

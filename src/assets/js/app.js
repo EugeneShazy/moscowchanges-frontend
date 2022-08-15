@@ -32,54 +32,61 @@ document.addEventListener('DOMContentLoaded', function() {
   /* Desktop Header Collapsible Elements */
 
   const pageWrapper = document.getElementById('pageWrapper');
-  const desktopSearchFormArea = document.getElementById('collapsibleSearchFormDesktopArea');
   const desktopSearchTrigger = document.getElementById('searchFormDesktopTrigger');
   const desktopSearchForm = document.getElementById('searchFormDesktop');
-  const desktopCollapsibleMenuArea = document.getElementById('collapsibleMenuDesktopArea');
   const desktopMenuTrigger = document.getElementById('collapsibleMenuDesktopTrigger');
   const desktopMenuPanel = document.getElementById('desktopMenuPanel');
 
-  function desktopHeaderCollapsibleElementTrigger(collapsibleArea, trigger, element) {
+  function desktopHeaderCollapsibleElementTriggerAction(trigger, element) {
     if (!element.classList.contains('active')) {
-      unCollapseElement(collapsibleArea, trigger, element);
+      unCollapseElement(trigger, element);
     } else {
       collapseElement(trigger, element);
     }
   }
 
-  function unCollapseElement(collapsibleArea, trigger, element) {
+  function unCollapseElement(trigger, element) {
     element.classList.add('active');
     setTimeout(() => {
       element.classList.add('shown');
-    }, 150);
+    }, 100);
     trigger.setAttribute('aria-expanded', 'true');
-
-    pageWrapper.addEventListener('click', function(event) {
-      if (!collapsibleArea.contains(event.target)) {
-        collapseElement(trigger, element);
-        pageWrapper.removeEventListener('click', function() {});
-      }
-    });
   }
 
   function collapseElement(trigger, element) {
     element.classList.remove('shown');
     setTimeout(() => {
       element.classList.remove('active');
-    }, 150);
+    }, 100);
     trigger.setAttribute('aria-expanded', 'false');
   }
 
   desktopSearchTrigger.addEventListener('click', function (event) {
     event.preventDefault();
     collapseElement(desktopMenuTrigger, desktopMenuPanel);
-    desktopHeaderCollapsibleElementTrigger(desktopSearchFormArea, desktopSearchTrigger, desktopSearchForm);
+    setTimeout(() => {
+      desktopHeaderCollapsibleElementTriggerAction(desktopSearchTrigger, desktopSearchForm);
+    }, 100);
   });
 
   desktopMenuTrigger.addEventListener('click', function (event) {
     event.preventDefault();
     collapseElement(desktopMenuTrigger, desktopSearchForm);
-    desktopHeaderCollapsibleElementTrigger(desktopCollapsibleMenuArea, desktopMenuTrigger, desktopMenuPanel);
+    setTimeout(() => {
+      desktopHeaderCollapsibleElementTriggerAction(desktopMenuTrigger, desktopMenuPanel);
+    }, 100);
+  });
+
+  pageWrapper.addEventListener('click', function(event) {
+    if (desktopSearchForm.classList.contains('shown') && !desktopSearchForm.contains(event.target)) {
+      collapseElement(desktopSearchTrigger, desktopSearchForm);
+    }
+  });
+
+  pageWrapper.addEventListener('click', function(event) {
+    if (desktopMenuPanel.classList.contains('shown') && !desktopMenuPanel.contains(event.target)) {
+      collapseElement(desktopMenuTrigger, desktopMenuPanel);
+    }
   });
 
   /* Hero Swiper */

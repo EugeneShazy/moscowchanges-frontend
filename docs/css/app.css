@@ -1144,7 +1144,13 @@ body {
 
 .main-content {
   position: relative;
+  top: 91px;
   z-index: -2;
+}
+@media (min-width: 992px) {
+  .main-content {
+    top: 113px;
+  }
 }
 .main-content section {
   margin-bottom: 50px;

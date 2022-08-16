@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenuPanel.classList.add('shown');
       }, 500);
       mobileMenuTrigger.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('mobile-menu-opened');
     } else {
       closeMobileMenu();
     }
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function closeMobileMenu() {
     mobileMenuPanel.classList.remove('shown', 'active');
     mobileMenuTrigger.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('mobile-menu-opened');
   }
 
   mobileMenuTrigger.addEventListener('click', collapseMobileMenu);
@@ -113,10 +115,6 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 3,
         slidesPerGroup: 3,
       },
-      992: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-      },
       1200: {
         slidesPerView: 4,
         slidesPerGroup: 4,
@@ -138,6 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     modules: [Navigation],
     spaceBetween: 0,
     slidesPerView: 3,
+    threshold: 20,
     breakpoints: {
       550: {
         slidesPerView: 4,
@@ -157,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const gallerySwiperThumbsModalVersion = new Swiper('.swiper-gallery-thumbs-carousel-modal-version', {
     spaceBetween: 6,
     slidesPerView: 4,
+    threshold: 20,
   });
   const gallerySwiperModalVersion = new Swiper('.swiper-gallery-modal-version', {
     modules: [Navigation, Pagination, Thumbs],
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         pagination: {
           enabled: false,
-        }
+        },
       },
     },
   });
@@ -192,16 +192,16 @@ document.addEventListener('DOMContentLoaded', function() {
       const activeSlideNumber = this.dataset.slideIndex;
       gallerySwiperModalVersion.slideTo(activeSlideNumber - 1, 0, false);
       galleryModal.classList.add('active');
-      document.body.classList.add('modal-open');
+      document.body.classList.add('modal-opened');
     });
   });
 
   window.onclick = function(event) {
-    if (event.target == galleryModal) {
+    if (event.target === galleryModal) {
       const activeSlideNumber = document.querySelector('.swiper-gallery-modal-version .swiper-slide-active').dataset.slideIndex;
       gallerySwiper.slideTo(activeSlideNumber - 1, 0, false);
       galleryModal.classList.remove('active');
-      document.body.classList.remove('modal-open');
+      document.body.classList.remove('modal-opened');
     }
   };
 

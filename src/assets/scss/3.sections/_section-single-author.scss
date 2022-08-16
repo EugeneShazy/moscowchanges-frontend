@@ -77,35 +77,7 @@
 			> .col-33 {
 
 				@media all and (orientation: landscape) and (min-width: 600px) and (max-width: 767px) {
-					flex: 0 0 calc(50% - 9px);
-					width: calc(50% - 9px);
-					padding: 0 9px;
-
-					&:last-child {
-						padding-right: 9px !important;
-					}
-					// &:last-child
-
-					&:nth-last-child(2) {
-						margin-bottom: 0 !important;
-					}
-					// &:nth-last-child(2)
-
-					&:nth-child(odd) {
-						padding-left: 0 !important;
-					}
-					// &:nth-child(odd)
-
-					&:nth-child(even) {
-						padding-right: 0 !important;
-					}
-					// &:nth-child(even)
-
-					&:only-child {
-						flex: 0 0 50%;
-						width: 50%;
-					}
-					// &:only-child
+					@include col-50-in-row;
 				}
 			}
 			// > .col-33

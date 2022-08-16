@@ -59,7 +59,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
+        test: /\.(eot|ttf|otf|woff|woff2)$/,
         type: 'asset',
         parser: {
           dataUrlCondition: {
@@ -67,7 +67,7 @@ module.exports = {
           },
         },
         generator: {
-          filename: 'assets/img/[name].[hash:6][ext]',
+          filename: 'assets/fonts/[name].[hash:6][ext]',
         },
       },
     ],
@@ -114,7 +114,7 @@ module.exports = {
       template_filename: '*',
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
+      filename: 'assets/css/[name].css',
     }),
     new CleanWebpackPlugin({
       verbose: true,

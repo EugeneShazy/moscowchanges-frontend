@@ -3,6 +3,46 @@
 	overflow: visible;
 	position: relative;
 
+	@include media-breakpoint-up(lg) {
+
+		.menu-link {
+			font: {
+				size: 1.25rem;
+				weight: 500;
+			}
+			padding: 0.5rem;
+			position: relative;
+
+			@include media-breakpoint-up(xl) {
+				font-size: 1.5rem;
+			}
+
+			&:before {
+				display: block;
+				content: '';
+				width: 0;
+				height: 2px;
+				background-color: $black;
+				position: absolute;
+				bottom: 5px;
+				left: 50%;
+				@include transition;
+			}
+			// &:before
+
+			&:hover {
+
+				&:before {
+					width: calc(100% - 1rem);
+					left: 0.5rem;
+				}
+				// &:before
+			}
+			// &:hover
+		}
+		// .menu-link
+	}
+
 	> nav {
 
 		&:before {

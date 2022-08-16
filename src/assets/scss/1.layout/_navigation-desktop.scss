@@ -102,49 +102,12 @@
 	}
 	// .menu-item
 
-	.menu-link {
-		font: {
-			size: 1.25rem;
-			weight: 500;
-		}
-		padding: 0.5rem;
-		position: relative;
-
-		@include media-breakpoint-up(xl) {
-			font-size: 1.5rem;
-		}
-
-		&:before {
-			display: block;
-			content: '';
-			width: 0;
-			height: 2px;
-			background-color: $black;
-			position: absolute;
-			bottom: 5px;
-			left: 50%;
-			@include transition;
-		}
-		// &:before
-
-		&:hover {
-
-			&:before {
-				width: calc(100% - 1rem);
-				left: 0.5rem;
-			}
-			// &:before
-		}
-		// &:hover
-	}
-	// .menu-link
-
 	.hamburger {
 		flex-shrink: 0;
 		height: calc(22px + 1rem);
 		right: -0.5rem;
 
-		@include media-breakpoint-up(xxl) {
+		@include media-breakpoint-up(1600px) {
 			height: calc(35px + 1rem);
 		}
 
@@ -152,7 +115,7 @@
 			width: 35px;
 			height: 4px;
 
-			@include media-breakpoint-up(xxl) {
+			@include media-breakpoint-up(1600px) {
 				width: 56px;
 				height: 7px;
 			}
@@ -161,7 +124,7 @@
 				@extend .hamburger-line;
 				top: -9px;
 
-				@include media-breakpoint-up(xxl) {
+				@include media-breakpoint-up(1600px) {
 					top: -14px;
 				}
 			}
@@ -171,7 +134,7 @@
 				@extend .hamburger-line;
 				bottom: -5px;
 
-				@include media-breakpoint-up(xxl) {
+				@include media-breakpoint-up(1600px) {
 					bottom: -7px;
 				}
 			}
@@ -200,9 +163,15 @@
 // .search-form-trigger
 
 .icon-search {
-	width: 32px;
-	height: 32px;
-	background-size: 28px 28px !important;
+	width: 24px;
+	height: 248px;
+	background-size: 20px 20px !important;
+
+	@include media-breakpoint-up(1600px) {
+		width: 32px;
+		height: 32px;
+		background-size: 28px 28px !important;
+	}
 }
 // .icon-search
 
@@ -276,7 +245,7 @@
 		padding-right: 82px;
 	}
 	@include media-breakpoint-up(1920px) {
-		margin-right: calc(50% - 960px);
+		margin-right: calc(50% - 952px);
 	}
 
 	&.active {
@@ -304,43 +273,6 @@
 				margin-bottom: 31px;
 			}
 			// &:last-child
-
-			.menu-link {
-				font: {
-					size: 1.25rem;
-					weight: 500;
-				}
-				padding: 0.5rem;
-				position: relative;
-
-				@include media-breakpoint-up(xl) {
-					font-size: 1.5rem;
-				}
-
-				&:before {
-					display: block;
-					content: '';
-					width: 0;
-					height: 2px;
-					background-color: $black;
-					position: absolute;
-					bottom: 5px;
-					left: 50%;
-					@include transition;
-				}
-				// &:before
-
-				&:hover {
-
-					&:before {
-						width: calc(100% - 1rem);
-						left: 0.5rem;
-					}
-					// &:before
-				}
-				// &:hover
-			}
-			// .menu-link
 		}
 		// .menu-item
 	}

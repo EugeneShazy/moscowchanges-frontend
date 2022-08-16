@@ -1,0 +1,23 @@
+.section-post-grid {
+
+	> .container {
+
+		> .grid {
+
+			@media all and (orientation: landscape) and (min-width: 600px) and (max-width: 767px) {
+				flex-flow: row wrap;
+			}
+
+			.col-33 {
+
+				@media all and (orientation: landscape) and (min-width: 600px) and (max-width: 767px) {
+					@include col-50-in-row;
+				}
+			}
+			// .col-33
+		}
+		// > .grid
+	}
+	// > .container
+}
+// .section-post-grid

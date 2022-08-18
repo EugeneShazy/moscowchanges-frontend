@@ -1,9 +1,5 @@
 .swiper-hero {
-	height: 477px;
-
-	@include media-breakpoint-up(xl) {
-		height: 608px;
-	}
+	height: 380px;
 
 	.swiper-hero-img {
 		width: 100%;
@@ -34,20 +30,15 @@
 		width: 100%;
 		height: 100%;
 		color: $white;
-		padding: 50px 22px 100px;
+		padding: 50px 22px 25px 22px;
 		box-sizing: border-box;
 		position: absolute;
 		z-index: 2;
 
-		@include media-breakpoint-up(md) {
-			padding-left: 12%;
-			padding-bottom: 85px;
-		}
-		@include media-breakpoint-up(lg) {
-			padding-left: 18%;
-		}
-		@include media-breakpoint-up(xxl) {
-			padding-left: 22%;
+		@include media-breakpoint-up(xl) {
+			max-width: 1170px;
+			padding-left: 5.25rem;
+			margin-left: calc(50% - 585px);
 		}
 	}
 	// .swiper-hero-text
@@ -55,7 +46,7 @@
 	.swiper-hero-title {
 		font: {
 			family: $font-secondary;
-			size: 2.125rem;
+			size: 1.875rem;
 			weight: 700;
 		}
 		text-transform: uppercase;
@@ -63,10 +54,7 @@
 		margin-bottom: 25px;
 
 		@include media-breakpoint-up(md) {
-			font-size: 2.75rem;
-		}
-		@include media-breakpoint-up(lg) {
-			font-size: 3.375rem;
+			font-size: 3.125rem;
 		}
 
 		a {
@@ -96,19 +84,15 @@
 
 	.swiper-pagination {
 		text-align: left;
-		bottom: 50px;
+		bottom: 25px;
 		left: 22px;
 
-		@include media-breakpoint-up(md) {
-			bottom: 38px;
-			left: 12%;
+		@include media-breakpoint-up(xl) {
+			max-width: 1170px;
+			padding-left: 5.25rem;
+			left: calc(50% - 585px);
 		}
-		@include media-breakpoint-up(lg) {
-			left: 18%;
-		}
-		@include media-breakpoint-up(xxl) {
-			left: 22%;
-		}
+
 	}
 	// .swiper-pagination
 }

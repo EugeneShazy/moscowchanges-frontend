@@ -1067,7 +1067,7 @@ hr.brand-gradient, hr.main-footer:before, .main-navigation-desktop .menu-item.cu
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .bg-white {
@@ -2346,12 +2346,7 @@ input[type=submit] {
 }
 
 .swiper-hero {
-  height: 477px;
-}
-@media (min-width: 1200px) {
-  .swiper-hero {
-    height: 608px;
-  }
+  height: 380px;
 }
 .swiper-hero .swiper-hero-img {
   width: 100%;
@@ -2384,31 +2379,22 @@ input[type=submit] {
   width: 100%;
   height: 100%;
   color: #fff;
-  padding: 50px 22px 100px;
+  padding: 50px 22px 25px 22px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
   z-index: 2;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .swiper-hero .swiper-hero-text {
-    padding-left: 12%;
-    padding-bottom: 85px;
-  }
-}
-@media (min-width: 992px) {
-  .swiper-hero .swiper-hero-text {
-    padding-left: 18%;
-  }
-}
-@media (min-width: 1400px) {
-  .swiper-hero .swiper-hero-text {
-    padding-left: 22%;
+    max-width: 1170px;
+    padding-left: 5.25rem;
+    margin-left: calc(50% - 585px);
   }
 }
 .swiper-hero .swiper-hero-title {
   font-family: "DIN Pro Condensed", Arial, non-serif;
-  font-size: 2.125rem;
+  font-size: 1.875rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -2416,12 +2402,7 @@ input[type=submit] {
 }
 @media (min-width: 768px) {
   .swiper-hero .swiper-hero-title {
-    font-size: 2.75rem;
-  }
-}
-@media (min-width: 992px) {
-  .swiper-hero .swiper-hero-title {
-    font-size: 3.375rem;
+    font-size: 3.125rem;
   }
 }
 .swiper-hero .swiper-hero-title a {
@@ -2443,23 +2424,14 @@ input[type=submit] {
 }
 .swiper-hero .swiper-pagination {
   text-align: left;
-  bottom: 50px;
+  bottom: 25px;
   left: 22px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .swiper-hero .swiper-pagination {
-    bottom: 38px;
-    left: 12%;
-  }
-}
-@media (min-width: 992px) {
-  .swiper-hero .swiper-pagination {
-    left: 18%;
-  }
-}
-@media (min-width: 1400px) {
-  .swiper-hero .swiper-pagination {
-    left: 22%;
+    max-width: 1170px;
+    padding-left: 5.25rem;
+    left: calc(50% - 585px);
   }
 }
 
@@ -2709,8 +2681,66 @@ body.modal-opened {
   }
 }
 
-section.section-hero-carousel:first-of-type {
+section.section-hero-carousel {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.section-hero-carousel.section-hero-carousel-wide {
+  max-width: 100%;
+}
+section.section-hero-carousel.section-hero-carousel-wide:first-of-type {
   padding-top: 0;
+}
+section.section-hero-carousel.section-hero-carousel-wide .swiper-hero {
+  height: 477px;
+}
+@media (min-width: 1200px) {
+  section.section-hero-carousel.section-hero-carousel-wide .swiper-hero {
+    height: 608px;
+  }
+}
+section.section-hero-carousel.section-hero-carousel-wide .swiper-hero-title {
+  font-size: 2.125rem;
+}
+@media (min-width: 768px) {
+  section.section-hero-carousel.section-hero-carousel-wide .swiper-hero-title {
+    font-size: 2.75rem;
+  }
+}
+@media (min-width: 992px) {
+  section.section-hero-carousel.section-hero-carousel-wide .swiper-hero-title {
+    font-size: 3.375rem;
+  }
+}
+section.section-hero-carousel.section-hero-carousel-wide .swiper-hero-text {
+  padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  section.section-hero-carousel.section-hero-carousel-wide .swiper-hero-text {
+    padding-bottom: 85px;
+    padding-left: 33px;
+  }
+}
+@media (min-width: 1200px) {
+  section.section-hero-carousel.section-hero-carousel-wide .swiper-hero-text {
+    padding-left: 1.25rem;
+  }
+}
+section.section-hero-carousel.section-hero-carousel-wide .swiper-pagination {
+  bottom: 50px;
+}
+@media (min-width: 768px) {
+  section.section-hero-carousel.section-hero-carousel-wide .swiper-pagination {
+    bottom: 38px;
+    left: 33px;
+  }
+}
+@media (min-width: 1200px) {
+  section.section-hero-carousel.section-hero-carousel-wide .swiper-pagination {
+    padding-left: 1.25rem;
+    left: calc(50% - 585px);
+  }
 }
 
 .section-news > .container > .grid > .col-33 {

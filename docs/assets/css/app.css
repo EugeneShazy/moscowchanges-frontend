@@ -1223,6 +1223,9 @@ aside:last-of-type {
 .main-header hr.brand-gradient, .main-header hr.main-footer:before, .main-header .main-navigation-desktop .menu-item.current-menu-item hr.menu-link:after, .main-navigation-desktop .menu-item.current-menu-item .main-header hr.menu-link:after, .main-header hr.bottom-gradient:after {
   height: 2px;
 }
+.main-header .footer-only {
+  display: none;
+}
 
 @media all and (max-height: 599px) {
   body.mobile-menu-opened {
@@ -1904,6 +1907,9 @@ aside:last-of-type {
             flex: 0 0 60%;
     width: 50%;
   }
+}
+.main-footer .header-only {
+  display: none;
 }
 
 /* Components */

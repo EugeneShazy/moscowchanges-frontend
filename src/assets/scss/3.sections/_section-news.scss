@@ -30,11 +30,57 @@
 	// > .container
 
 	.post-list {
+		overflow: hidden;
+		position: relative;
 
 		&.bg-white {
 			height: 100%;
 		}
 		// &.bg-white
+
+		&.clipped {
+
+			&:before {
+				display: block;
+				content: '';
+				width: 100%;
+				height: 250px;
+				background: linear-gradient(to bottom, rgba($white, 0.125) 12.5%, rgba($white, 0.25) 25%, rgba($white, 0.5) 50%, $white 70%, $white);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: 2;
+			}
+			// &:before
+
+			&:after {
+				display: block;
+//				content: '';
+				width: 100%;
+				height: 160px;
+				backdrop-filter: blur(1px);
+				opacity: 0.5;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: 3;
+			}
+			// &:after
+		}
+		// &.clipped
+
+		.section-link {
+
+			@include media-breakpoint-up(md) {
+				position: absolute;
+				bottom: 22px;
+				z-index: 9;
+			}
+			@include media-breakpoint-up(lg) {
+				bottom: 19px;
+			}
+		}
+		// .section-link
 	}
 	// .post-list
 }

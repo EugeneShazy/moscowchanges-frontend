@@ -2787,8 +2787,48 @@ section.section-hero-carousel.section-hero-carousel-wide .swiper-pagination {
     width: 50%;
   }
 }
+.section-news .post-list {
+  overflow: hidden;
+  position: relative;
+}
 .section-news .post-list.bg-white {
   height: 100%;
+}
+.section-news .post-list.clipped:before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 250px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(12.5%, rgba(255, 255, 255, 0.125)), color-stop(25%, rgba(255, 255, 255, 0.25)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(70%, #fff), to(#fff));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.125) 12.5%, rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0.5) 50%, #fff 70%, #fff);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.section-news .post-list.clipped:after {
+  display: block;
+  width: 100%;
+  height: 160px;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+@media (min-width: 768px) {
+  .section-news .post-list .section-link {
+    position: absolute;
+    bottom: 22px;
+    z-index: 9;
+  }
+}
+@media (min-width: 992px) {
+  .section-news .post-list .section-link {
+    bottom: 19px;
+  }
 }
 
 .section-posts-carousel.bg-white {

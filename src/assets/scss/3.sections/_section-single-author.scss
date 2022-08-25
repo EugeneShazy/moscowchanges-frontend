@@ -59,19 +59,9 @@
 
 		.posts-grid {
 			clear: both;
-			margin-bottom: 50px;
 
 			@media all and (orientation: landscape) and (min-width: 600px) {
 				flex-flow: row wrap;
-			}
-			@include media-breakpoint-up(md) {
-				margin-bottom: 125px;
-			}
-			@include media-breakpoint-up(xl) {
-				margin-bottom: 225px;
-			}
-			@include media-breakpoint-up(xxl) {
-				margin-bottom: 275px;
 			}
 
 			> .col-33 {
